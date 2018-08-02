@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: "Eraser";
+	src: url('ChalkDust.ttf');
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url(background.png);
+	background-repeat: no-repeat;
+}
+body wrapper {
+	margin: 0 auto;
+	display: block;
+}
+body wrapper form {
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
+#firstnav ul li {
+	list-style-type: none;
+	font-family: "Chalkduster";
+	padding: 15px;
+	color: black;
+	transition: all .4s ease-in;
+}
+#firstnav ul li:hover {
+	background-color: white;
+	color: darkslategrey;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #959595;
+	z-index: 1;
+	width: 22%;
+	
+}
+
+#firstnav:hover .dropdown-content {
+    display: block;
+}
+#firstnav {
+	background-color: rgba(0, 0, 0, .5);
+		position: relative;
+    display: inline-block;
+}
+
+
+#secondnav {
+	color: white;
+	font-family: "Chalkduster";
+	list-style-type: none;
+}
+#secondnav ul li {
+	padding: 15px;
+	list-style-type: none;
+	display: inline;
+	float: left;
+	font-size: 20px;
+	width: 17%;
+	text-align: center;
+	transition: all .3s ease-in-out;
+}
+#secondnav ul #yellow {
+	color: gold;
+}
+#secondnav ul li:hover {
+	transform: scale(2);
+	color: white;
+}
+.subscribe {
+	font-family: "Chalkduster";
+	font-size: 30px;
+	width: 36%;
+	text-align: center;
+	margin: 15px auto;
+	display: block;
+}
+.textinput {
+	background-image: url(textbcg.png);
+	margin: 35px;
+	padding-top: 15px;
+	padding-left: 2%;
+	padding-bottom: 15px;
+	padding-right: 30%;
+	border: none;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+}
+.submitbtn {
+	font-family: "Chalkduster";
+	font-size: 20px;
+	background-image: url(submitbcg.png);
+	border: none;
+	padding: 2%;
+	color: grey;
+	margin: 5%;
+}
+.plantscolor {
+	color: #F30044;
+	font-family: "Chalkduster";
+	text-align: center;
+	font-size: 25px;
+	margin: 0 auto;
+	display: block;
+}
+.plantsnor {
+	font-family: "Chalkduster";
+	text-align: center;
+	font-size: 25px;
+	margin-top: 0;
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-bottom: 0;
+	display: block;
+}
+.plantsbtn {
+	font-family: "Chalkduster";
+	text-align: center;
+	margin-top: 5%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 5%;
+	display: block;
+	font-size: 25px;
+	color: #63E95D;
+	background-image: url(submitbcg.png);
+	width: 40%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+@media screen and (min-width:62.5em){
+	body wrapper {
+		max-width: 62.5em;
+	}
+	#firstnav {
+		display: inherit;
+	}
+	#secondnav {
+		display: none;
+	}
+}
+
+@media screen and (min-width:93.75em){
+	body wrapper {
+		max-width: 93.75em;
+	}
+	#firstnav {
+		display: none;
+	}
+	#secondnav {
+	display: inherit;
+	color: #CFCFCF;
+	}
+	.subscribe {
+	font-family: "Chalkduster";
+	font-size: 40px;
+	width: 25%;
+	text-align: center;
+	margin: 15px auto;
+	display: block;
+	color: #595959;
+}
+.textinput {
+	background-image: url(textbcg.png);
+	margin: 35px;
+	padding-top: 20px;
+	padding-left: 2%;
+	padding-bottom: 20px;
+	padding-right: 30%;
+	border: none;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+}
+.submitbtn {
+	font-family: "Chalkduster";
+	font-size: 30px;
+	background-image: url(submitbcg.png);
+	border: none;
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-left: 1%;
+	padding-bottom: 1%;
+	color: #FFFFFF;
+	margin: 5%;
+}
+.plantscolor {
+	color: #F30044;
+	font-family: "Chalkduster";
+	text-align: center;
+	font-size: 30px;
+	margin: 0 auto;
+	display: block;
+}
+.plantsnor {
+	font-family: "Chalkduster";
+	text-align: center;
+	font-size: 30px;
+	margin-top: 0;
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-bottom: 0;
+	display: block;
+	color: #FFFFFF;
+}
+.plantsbtn {
+	font-family: "Chalkduster";
+	text-align: center;
+	margin-top: 5%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 5%;
+	display: block;
+	font-size: 30px;
+	color: #63E95D;
+	background-image: url(submitbcg.png);
+	width: 30%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+}
